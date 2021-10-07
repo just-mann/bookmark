@@ -1,0 +1,158 @@
+@import 'mixins';
+
+
+// Mobile
+@include breakpoints-mobile(small) {    
+    header {
+        padding: 32px 1.5625rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.4s ease;
+
+        .logo {
+            cursor: pointer;
+        }
+
+        .navLinks {
+            display: none;
+            transition: all 0.3s ease-in-out;
+
+            // .link {
+            //     text-decoration: none;
+            //     color: $veryDarkBlue;
+            //     font-family: $primaryFamily;
+            //     text-transform: uppercase;
+            //     font-weight: 400;
+            // }
+        }
+
+        .hamburger {
+            cursor: pointer;
+            display: block;
+        }
+
+    }
+
+}
+
+
+// iPad or Tablets
+@include breakpoints-desktop(medium) {
+    
+
+    header {
+        padding: 32px 1.5625rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.4s ease;
+        
+        .logo {
+            cursor: pointer;
+        }
+
+        .navLinks {
+            display: block;
+            transition: all 0.3s ease-in-out;
+
+            .link {
+                text-decoration: none;
+                color: $veryDarkBlue;
+                font-family: $primaryFamily;
+                text-transform: uppercase;
+                padding: 10px 10px;
+                font-weight: $fontWgh400;
+                font-size: 15px;
+                border-radius: 5px;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: $softRed;
+                }
+
+            }
+
+            .login {
+                background-color: $softRed;
+                color: #fff;
+                border: 2px solid $softRed;
+                box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0,0,0,0.54);
+                -webkit-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0,0,0,0.54);
+                -moz-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0,0,0,0.54);
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-color: transparent;
+                    font-weight: $fontWgh500;
+                    color: $softRed;
+                }
+            }
+
+            
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+    }
+}
+
+// Desktop
+@include breakpoints-desktop(large) {
+    header {
+        padding: 35px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.4s ease;
+
+        .logo {
+            cursor: pointer;
+        }
+
+        .navLinks {
+            display: block;
+            transition: all 0.3s ease-in-out;
+
+            .link {
+                text-decoration: none;
+                color: $veryDarkBlue;
+                font-family: $primaryFamily;
+                text-transform: uppercase;
+                padding: 0.625rem 2rem;
+                font-weight: $fontWgh400;
+                font-size: 1rem;
+                border-radius: 5px;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: $softRed;
+                }
+
+            }
+
+            .login {
+                background-color: $softRed;
+                color: #fff;
+                border: 2px solid $softRed;
+                box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0,0,0,0.54);
+                -webkit-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0,0,0,0.54);
+                -moz-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0,0,0,0.54);
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    background-color: transparent;
+                    font-weight: $fontWgh500;
+                    color: $softRed;
+                }
+            }
+
+            
+        }
+
+        
+    }
+}

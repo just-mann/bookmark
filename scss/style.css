@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 39.9375rem) {
+  header {
+    padding: 32px 1.5625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  header .logo {
+    cursor: pointer;
+  }
+  header .navLinks {
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header .hamburger {
+    cursor: pointer;
+    display: block;
+  }
+}
+
+@media (min-width: 40rem) {
+  header {
+    padding: 32px 1.5625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  header .logo {
+    cursor: pointer;
+  }
+  header .navLinks {
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header .navLinks .link {
+    text-decoration: none;
+    color: #252b46;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  header .navLinks .link:hover {
+    color: #fa5757;
+  }
+  header .navLinks .login {
+    background-color: #fa5757;
+    color: #fff;
+    border: 2px solid #fa5757;
+    box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0, 0, 0, 0.54);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  header .navLinks .login:hover {
+    background-color: transparent;
+    font-weight: 500;
+    color: #fa5757;
+  }
+  header .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 64rem) {
+  header {
+    padding: 35px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  header .logo {
+    cursor: pointer;
+  }
+  header .navLinks {
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  header .navLinks .link {
+    text-decoration: none;
+    color: #252b46;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+    padding: 0.625rem 2rem;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  header .navLinks .link:hover {
+    color: #fa5757;
+  }
+  header .navLinks .login {
+    background-color: #fa5757;
+    color: #fff;
+    border: 2px solid #fa5757;
+    box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0, 0, 0, 0.54);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  header .navLinks .login:hover {
+    background-color: transparent;
+    font-weight: 500;
+    color: #fa5757;
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .sectionA {
+    padding: 2rem 1.5625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 40rem) {
+  body {
+    position: relative;
+  }
+  .sectionA {
+    padding: 0 1.5625rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sectionA .div1 {
+    width: 30rem;
+    font-family: "Rubik", sans-serif;
+    text-align: left;
+  }
+  .sectionA .div1 h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 3.0625rem;
+    margin-bottom: 1.8125rem;
+  }
+  .sectionA .div1 p {
+    margin-bottom: 2.8125rem;
+    font-size: 1.125rem;
+  }
+  .sectionA .div1 div a {
+    font-size: 1.0625rem;
+    text-decoration: none;
+    padding: 0.85rem 1.6875rem;
+    border-radius: 0.3125rem;
+    font-weight: bold;
+  }
+  .sectionA .div1 div .chromeBtn {
+    color: #fff;
+    border: 0.125rem solid #5368df;
+    background-color: #5368df;
+    margin-right: 1.1875rem;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .sectionA .div1 div .chromeBtn:hover {
+    background-color: transparent;
+    color: #5368df;
+    border: 0.125rem solid #5368df;
+  }
+  .sectionA .div1 div .fireFoxBtn {
+    background-color: #f1f1f1;
+    border: 0.125rem solid #f1f1f1;
+    color: #252b46;
+    box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0, 0, 0, 0.54);
+    -webkit-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0, 0, 0, 0.54);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .sectionA .div1 div .fireFoxBtn:hover {
+    border: 0.125rem solid #252b46;
+  }
+  .sectionA .div2 {
+    font-family: "Rubik", sans-serif;
+    margin: 2rem 0;
+    background-color: yellow;
+  }
+  .sectionA .div2 img {
+    position: absolute;
+    top: 8.75rem;
+    right: 2rem;
+    height: 25rem;
+    width: 36.5rem;
+    z-index: 5;
+  }
+  .sectionA .div2 .ribbonLike {
+    position: absolute;
+    top: 15.625rem;
+    right: 0;
+    background: #5368df;
+    width: 31.875rem;
+    height: 20rem;
+    border-radius: 10rem 0 0 10rem;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 64rem) {
+  .sectionA {
+    padding: 2.1875rem 6.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sectionA .div1 {
+    margin-top: 4.8125rem;
+  }
+}
+
+@media (max-width: 39.9375rem) {
+  .sectionB {
+    padding: 2rem 1.5625rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  .sectionB {
+    padding: 2rem 1.5625rem;
+    margin: 10rem 0 0 0;
+  }
+  .sectionB h3 {
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 30px;
+  }
+  .sectionB p {
+    text-align: center;
+    max-width: 585px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: "Rubik", sans-serif;
+    line-height: 37px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 64rem) {
+  .sectionB {
+    padding: 2.1875rem 6.25rem;
+  }
+  .sectionB h3 {
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 40px;
+  }
+  .sectionB p {
+    text-align: center;
+    max-width: 685px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: "Rubik", sans-serif;
+    line-height: 37px;
+    font-weight: 500;
+  }
+}
+/*# sourceMappingURL=style.css.map */

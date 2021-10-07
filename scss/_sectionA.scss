@@ -1,0 +1,126 @@
+@import 'mixins';
+
+
+// Mobile
+@include breakpoints-mobile(small) {    
+    .sectionA {
+        padding: 2rem 1.5625rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+
+// iPad or Tablets
+@include breakpoints-desktop(medium) {
+    body {
+        position: relative;
+    }
+    .sectionA {
+        padding: 0 1.5625rem;
+        display: flex;
+        justify-content: space-between;
+
+        .div1 {
+            width: 30rem;
+            font-family: $primaryFamily;
+            text-align: left;
+            // background-color: lightgreen;
+
+            h3 {
+                font-family: $primaryFamily;
+                font-size: 3.0625rem;
+                margin-bottom: 1.8125rem;
+            }
+
+            p {
+                margin-bottom: 2.8125rem;
+                font-size: 1.125rem;
+            }
+
+            div {
+                a {
+                    font-size: 1.0625rem;
+                    text-decoration: none;
+                    padding: 0.85rem 1.6875rem;
+                    border-radius: 0.3125rem;
+                    font-weight: bold;
+                }
+
+                .chromeBtn {
+                    color: #fff;
+                    border: 0.125rem solid $softBlue;
+                    background-color: $softBlue;
+                    margin-right: 1.1875rem;
+                    transition: all 0.4s ease-in-out;
+
+                    &:hover {
+                        background-color: transparent;
+                        color: $softBlue;
+                        border: 0.125rem solid $softBlue;
+                    }
+                }
+                
+                .fireFoxBtn {
+                    background-color: rgb(241, 241, 241);
+                    border: 0.125rem solid rgb(241, 241, 241);;
+                    color: $veryDarkBlue;
+                    // box-shadow: 0.25rem 0.3125rem 1.1875rem -0.0625rem rgba(0,0,0,0.75);
+                    box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0,0,0,0.54);
+                    -webkit-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0,0,0,0.54);
+                    -moz-box-shadow: 0.25rem 0.5rem 1.1875rem -0.8125rem rgba(0,0,0,0.54);
+                    transition: all 0.4s ease-in-out;
+                    
+                    &:hover {
+                        border: 0.125rem solid $veryDarkBlue;
+                    }
+                }
+            }
+        }
+        
+        .div2 {
+            font-family: $primaryFamily;
+            margin: 2rem 0;
+            background-color: yellow;
+            // position: relative;
+
+            
+            img {
+                position: absolute;
+                top: 8.75rem;
+                right: 2rem;
+                height: 25rem;
+                width: 36.5rem;
+                z-index: 5;
+            }
+            
+            .ribbonLike {
+                position: absolute;
+                top: 15.625rem;
+                right: 0;
+                background: $softBlue;
+                width: 31.875rem;
+                height: 20rem;
+                border-radius: 10rem 0 0 10rem;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+// Desktop
+@include breakpoints-desktop(large) {
+    .sectionA {
+        padding: 2.1875rem 6.25rem;
+        display: flex;
+        justify-content: space-between;
+
+        .div1 {
+            margin-top: 4.8125rem;
+        }
+    }
+
+
+}
